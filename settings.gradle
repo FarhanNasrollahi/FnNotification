@@ -1,0 +1,3 @@
+include ':MazNotification'
+include ':app'
+rootProject.name = "FnNotification"
