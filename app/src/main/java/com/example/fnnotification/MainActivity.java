@@ -14,14 +14,12 @@ import com.example.maznotification.FnPendingIntentMode;
 import com.example.maznotification.FnPriority;
 import com.example.maznotification.FnVisibility;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             new FnNotification.Builder(MainActivity.this)
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                     .setPriority(FnPriority.MAX)
                     .setAutoCancel(false)
                     .setOnGoing(true)
-                    .build(5 , new FnChannel.Builder("5", "FARHAN",FnPriority.MAX)
+                    .build(5, new FnChannel.Builder("5", "FARHAN", FnPriority.MAX)
                             .setEnabledBubbles(true)
                             .setEnabledBadge(true)
                             .setEnabledLight(true)
@@ -39,9 +37,5 @@ public class MainActivity extends AppCompatActivity {
                             .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                             .build());
         }
-
-
     }
-
-
-    }
+}
