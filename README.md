@@ -11,7 +11,7 @@ Add this in your app's build.gradle file(Using Android Studio and Gradle):
   
 
     dependencies {
-	         implementation 'com.github.farhanff:FnNotification:0.1.0'
+	         implementation 'com.github.FarhanNasrollahi:FnNotification:0.1.0'
 	}
 
 For use Code :
