@@ -1,4 +1,4 @@
-FnNotification
+<h1>FnNotification</h1>
 
 Add this in your app's build.gradle file(Using Android Studio and Gradle):
 
@@ -11,7 +11,7 @@ Add this in your app's build.gradle file(Using Android Studio and Gradle):
   
 
     dependencies {
-	        implementation 'com.github.farhanff:FnToast:Tag'
+	        implementation 'com.github.farhanff:FnToast:0.1.0'
 	}
 
 For use Code :
@@ -33,5 +33,26 @@ new FnNotification.Builder(MainActivity.this)
                             .build());
 
 ```
+
+
+
+|  Set  | |
+| ------------ | - |
+| setTitle | String |
+| setText | String |
+| setSound | Uri |
+| setAutoCancel | Boolean |
+| setLightColor | int |
+| setSmallIcon | int |
+| setLargeIcon | Bitmap |
+| setOnGoing | Boolean |
+| setCategory | Categorys |
+| setPriority | FnPriority |
+| addAction |  |
+| setDeleteIntent |  |
+| setContentIntent |  |
+| setFullScreenIntent |  |
+| show |  |
+
  
 
